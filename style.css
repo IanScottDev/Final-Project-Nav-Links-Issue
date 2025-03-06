@@ -292,3 +292,8 @@ FEATURES
     border: 1px solid #e5e7eb;
     border-radius: 500px;
 }
+
+.feature__text {
+    margin-left: 16px;
+    margin-top: 8px;
+}
