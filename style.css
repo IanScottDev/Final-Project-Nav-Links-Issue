@@ -297,3 +297,7 @@ FEATURES
     margin-left: 16px;
     margin-top: 8px;
 }
+
+.feature__para {
+    margin-top: 16px;
+}
