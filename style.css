@@ -281,6 +281,11 @@ FEATURES
     padding: 32px 24px;
 }
 
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
 .feature__img--wrapper {
     display: flex;
     padding: 20px;
