@@ -681,6 +681,10 @@ TESTIMONIAL
     border-radius: 50%;
 }
 
+.testimonial__details {
+    margin-left: 24px
+}
+
 .testimonial__title, .testimonial__name {
     font-weight: 700;
     color: #243e63;
