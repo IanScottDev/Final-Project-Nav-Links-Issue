@@ -191,14 +191,14 @@ HEADER
     transition: border-color 300ms ease;
 }
 
+.header__email--input:hover {
+    border-color: #a0aec0;
+}
+
 .header__email--input:focus, .header__email--input:active {
     outline: transparent solid 2px;
     outline-offset: 2px;
     border-color: rgba(100, 21, 255);
-}
-
-.header__email--input:hover {
-    border-color: #a0aec0;
 }
 
 .header__email--btn {
