@@ -33,6 +33,11 @@ img {
     width: 100%;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 .row {
     width: 100%;
     max-width: 1280px;
@@ -181,6 +186,12 @@ HEADER
     bottom: 0;
     z-index: 1;
     transition: border-color 300ms ease;
+}
+
+.header__email--input:focus, .header__email--input:active {
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    border-color: rgba(100, 21, 255);
 }
 
 .header__email--input:hover {
@@ -468,9 +479,13 @@ PRICING
     text-align: center;
 }
 
+#pricing button:hover {
+    transform: translateX(1px) translateY(-1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .plans {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
