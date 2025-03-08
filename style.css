@@ -201,6 +201,10 @@ HEADER
     border-color: rgba(100, 21, 255);
 }
 
+header__email--input:focus:hover {
+    border-color: rgba(100, 21, 255);
+}
+
 .header__email--btn {
     z-index: 2;
     margin: 8px;
