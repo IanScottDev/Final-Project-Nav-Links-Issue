@@ -201,10 +201,6 @@ HEADER
     border-color: rgba(100, 21, 255);
 }
 
-header__email--input:focus:hover {
-    border-color: rgba(100, 21, 255);
-}
-
 .header__email--btn {
     z-index: 2;
     margin: 8px;
@@ -656,6 +652,29 @@ TESTIMONIAL
     width: 50%;
 }
 
+.testimonials__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+}
+
+.testimonial__para {
+    margin: 16px 0px 40px 0;
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial {
+    margin-top: 40px;
+}
+
 .testimonial__img {
     width: 80px;
     height: 80px;
@@ -667,6 +686,15 @@ TESTIMONIAL
     color: #243e63;
     font-size: 20px;
     line-height: 1.5;
+}
+
+.testimonial__title {
+    margin-top: 16px;
+}
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
 }
 
 .testimonial__buttons {
@@ -688,4 +716,19 @@ TESTIMONIAL
 .testimonial__button svg {
     width: 16px;
     height: 16px;
+}
+
+/*
+
+MOBILE DEVICES
+
+*/
+
+@media(max-width: 1280px) {
+    h1 {
+        font-size: 36px;
+    }
+    .header__description--para {
+        font-size: 16px;
+    }
 }
