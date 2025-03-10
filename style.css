@@ -831,6 +831,11 @@ footer {
     overflow: hidden;
 }
 
+.footer__row {
+    display: flex;
+    justify-content: center;
+}
+
 .footer__columns {
     margin-top: -48px;
     display: flex;
@@ -919,6 +924,17 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms;
+}
+
+.footer__social--link svg {
+    height: 16px;
+    width: 16px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*
