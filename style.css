@@ -69,7 +69,6 @@ main {
     margin-bottom: 96px;
 }
 
-
 /* 
 
 NAVBAR
@@ -141,6 +140,46 @@ nav {
 
 .btn__text {
     color: white;
+}
+
+.btn__menu {
+    background-color: transparent;
+    color: rgb(26, 32, 44);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 4px;
+    margin: 8px 0px;
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+
+.menu__backdrop {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    font-size: 18px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 4px;
 }
 
 /*
@@ -918,6 +957,11 @@ footer {
     font-weight: 500;
     position: relative;
     cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.footer__column--link:hover {
+    text-decoration: underline;
 }
 
 .footer__divider {
@@ -993,27 +1037,42 @@ MOBILE DEVICES
 
 */
 
+/* @media(max-width: 1280px) {
+    h1 {
+        font-size: 36px;
+    }
+    .header__description--para {
+        font-size: 16px;
+    }
+} */
+
 @media(max-width: 640px) {
+
     .section__title {
         line-height: 1.25;
     }
+
     .container {
         padding: 80px 0;
     }
+
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
     }
+
     .header__email {
         flex-direction: column;
         height: auto;
     }
+
     .header__email--input {
         position: static;
         padding: 16px 0;
         padding-left: 32px;
         line-height: 1.5;
     }
+
     .header__email--btn {
         width: 100%;
         padding: 16px 0;
@@ -1021,102 +1080,130 @@ MOBILE DEVICES
         margin-bottom: 0px;
         line-height: 1.5;
     }
+
     .header__customers--title {
         font-size: 14px;
         letter-spacing: 0.05em;
     }
+
     .section__title {
         font-size: 30px;
     }
+
     #features .section__title, #pricing .section__title {
         font-size: 36px;
     }
+    
     .feature__row {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .feature__title {
         letter-spacing: 0.025em;
         line-height: 1;
     }
+
     .feature__text {
         margin-left: 0px;
         margin-top: 16px;
     }
+
     .feature__para {
         margin-top: 4px;
         line-height: 2;
     }
+
     #steps .section__title {
         margin: 16px 0 0 0;
     }
+
     .steps__list {
         margin-top: 48px;
     }
+
     .btn {
         line-height: 1.5;
     }
+
     .plan__price {
         font-size: 36px;
     }
+
     .plan__bottom {
         padding: 32px 48px;
     }
+
     .testimonial__para {
         margin-bottom: 32px;
     }
+
     .testimonial__bottom {
         flex-direction: column;
         align-items: center;
         padding-top: 4px;
     }
+
     .testimonial__profile {
         flex-direction: column;
         align-items: center;
     }
+
     .testimonial__details {
         margin-left: 0;
         margin-top: 8px;
     }
+
     .testimonial__img {
         height: 64px;
         width: 64px;
     }
+
     .testimonial__buttons {
         margin-top: 32px;
     }
+
     .start__title {
         font-size: 24px;
     }
+
     .start__container {
         padding: 80px 0;
     }
+
     .start__buttons {
         flex-direction: column;
     }
+
     .start__button:nth-child(1) {
         margin-right: 0;
     }
+
     .start__button {
         padding: 12px 24px;
         font-size: 14px;
     }
+
     .start__button:nth-child(2) {
         margin-top: 16px;
     }
+
     main {
         margin-bottom: 80px;
     }
+
     .footer__columns {
         justify-content: center;
     }
+
     .footer__column {
         width: auto;
         padding: 0 16px;
         text-align: center;
         align-items: center;
     }
+    
     .footer__copyright {
         font-size: 14px;
         text-align: center;
