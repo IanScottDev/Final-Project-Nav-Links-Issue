@@ -1123,8 +1123,12 @@ MOBILE DEVICES
 
 @media(max-width: 640px) {
 
-    .btn__menu {
-        display: contents;
+   .btn__menu {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
     }
 
 
