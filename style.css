@@ -160,6 +160,12 @@ nav {
     display: none;
 }
 
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .menu__backdrop {
     position:absolute;
     top: 0;
@@ -170,13 +176,8 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    display: none;
-}
-
-.menu--open .modal {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(-200%);
+    transition: all 300ms ease;
 }
 
 .menu__list {
