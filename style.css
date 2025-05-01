@@ -173,6 +173,12 @@ nav {
     display: none;
 }
 
+.menu--open .modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .menu__list {
     display: flex;
     flex-direction: column;
